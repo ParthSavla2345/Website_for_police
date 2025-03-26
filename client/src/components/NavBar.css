@@ -1,0 +1,89 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #333;
+  color: white;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.navbar-links a:hover {
+  color: #ddd;
+}
+
+.navbar-register {
+  margin-left: auto; /* Pushes the register button to the right */
+}
+
+/*.register-button {
+  background-color: #007bff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-button:hover {
+  background-color: #0056b3;
+}*/
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 120px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a, 
+.dropdown-content button {
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.logout-button {
+  background: none;
+  color: red;
+}
