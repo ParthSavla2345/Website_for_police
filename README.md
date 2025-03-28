@@ -89,11 +89,3 @@ npm start
 🚀 Automated suspect identification using facial recognition.  
 🚀 Mobile app integration for on-the-go case filing.  
 
----
-
-📌 **Contributors**  
-- **Parth Savla**
-- **Open for Collaboration!** 🤝  
-
-📌 **License**  
-This project is **open-source** under the **MIT License**.  
