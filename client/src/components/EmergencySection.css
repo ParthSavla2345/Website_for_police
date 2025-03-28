@@ -1,0 +1,50 @@
+.emergency-container {
+    background-color: #ffebeb;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .h2emergency {
+    color: #d32f2f;
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .radio-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+  }
+  
+  .report-button {
+    background-color: #d32f2f;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .report-button:hover {
+    background-color: #b71c1c;
+  }
+  

@@ -1,0 +1,63 @@
+.current-cases-container {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.current-cases-container h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.cases-dropdown {
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.cases-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 1rem;
+  color: #333;
+}
+
+.cases-table th,
+.cases-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.cases-table th {
+  background-color: #001F3F;
+  color: white;
+}
+
+.status-solved {
+  color: #4caf50; 
+}
+
+.status-pending {
+  color: #ff9800; 
+}
+
+.status-unsolved {
+  color: #f44336; 
+}
+
+@media (max-width: 768px) {
+  .cases-table {
+      font-size: 0.9rem;
+  }
+  .cases-table th, .cases-table td {
+      padding: 8px;
+  }
+}
