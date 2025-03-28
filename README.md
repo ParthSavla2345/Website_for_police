@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+# **Police Case Management System** 🚔  
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **Overview**  
+The **Police Case Management System** is a web-based platform that allows police officers to manage and track criminal cases efficiently. The system enables officers to **file, update, and categorize cases**, ensuring transparency and streamlined investigations.  
 
-## Available Scripts
+## **Features**  
 
-In the project directory, you can run:
+### 🔹 **User Roles & Authentication**  
+- **Victims (Users)**: File complaints and view case progress.  
+- **Police Officers**: Manage cases, upload evidence, and track case status.  
+- **Admin**: Monitor overall case data and generate reports.  
 
-### `npm start`
+### 🔹 **Case Management**  
+- **File a Case**: Users can submit complaints, providing details like crime type, location, suspect information, and evidence.  
+- **Status Tracking**: Cases are categorized as `Pending`, `Solved`, or `Unsolved`.  
+- **Filtering & Sorting**: Officers can filter cases based on status and assigned officer.  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 🔹 **Evidence Handling**  
+- **File Uploads**: Officers can attach evidence files (images, documents).  
+- **Secure Storage**: Evidence is stored and retrieved securely.  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 🔹 **Admin Dashboard (Analytics & Reports)**  
+- **Case Insights**: Track case statistics (solved vs. pending).  
+- **Officer Performance**: View officers handling the most cases.  
 
-### `npm test`
+## **Tech Stack**  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### 💻 **Frontend**  
+- **React.js**: Interactive UI for managing cases.  
+- **CSS**: Custom styling for tables and filtering options.  
 
-### `npm run build`
+### 🖥️ **Backend**  
+- **Node.js & Express.js**: API handling and case management logic.  
+- **Multer**: Middleware for handling evidence file uploads.  
+- **MongoDB & Mongoose**: Database for storing case details.  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## **Database Structure (MongoDB Compass Compatible)**  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Each **case** is stored in MongoDB as a document:  
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```json
+{
+  "_id": "C001",
+  "crimeType": "Robbery",
+  "victimName": "John Smith",
+  "suspectName": "Unknown",
+  "location": "Downtown Street",
+  "dateTime": { "$date": "2024-12-15T00:00:00.000Z" },
+  "description": "Robbery case solved with the arrest of two suspects.",
+  "officer": "Officer John Doe",
+  "evidence": null,
+  "createdAt": { "$date": "2025-03-27T16:36:14.928Z" },
+  "updatedAt": { "$date": "2025-03-27T16:36:14.928Z" },
+  "__v": 0
+}
+```
 
-### `npm run eject`
+## **Setup & Installation**  
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### **1️⃣ Clone the Repository**  
+```bash
+git clone https://github.com/your-repo/police-case-management.git
+cd police-case-management
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### **2️⃣ Install Dependencies**  
+```bash
+npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### **3️⃣ Setup MongoDB Compass**  
+- Open **MongoDB Compass** and create a database named `police_cases_db`.  
+- Insert case data manually or run the backend API.  
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### **4️⃣ Start the Backend Server**  
+```bash
+node server.js
+```
 
-## Learn More
+### **5️⃣ Start the Frontend**  
+```bash
+cd client
+npm start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## **Future Enhancements**  
+🚀 AI-powered case recommendations for officers.  
+🚀 Automated suspect identification using facial recognition.  
+🚀 Mobile app integration for on-the-go case filing.  
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+📌 **Contributors**  
+- **Parth Savla**
+- **Open for Collaboration!** 🤝  
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+📌 **License**  
+This project is **open-source** under the **MIT License**.  
