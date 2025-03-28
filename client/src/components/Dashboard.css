@@ -1,0 +1,114 @@
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+.Label4 h3 {
+  font-family: 'Arial', sans-serif; /* or your preferred font */
+  font-size: 24px; /* Adjust the size as needed */
+  font-weight: bold; /* Make the text bold */
+  color: black; /* Set the text color to black */
+  margin-bottom: 10px; /* Add space below the heading */
+}
+.left-section {
+  flex: 1;
+  max-width: 50%;
+  padding: 15px;
+}
+
+.right-section {
+  flex: 1;
+  max-width: 50%;
+  background: #f8f8f8;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Alert Box */
+.alert-box {
+  border-radius: 8px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.show-more-btn {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+/* Mobile Specific Styles */
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column; /* Stack the left and right sections */
+    padding: 15px; /* Adjust padding on smaller screens */
+  }
+
+  .left-section, .right-section {
+    max-width: 100%; /* Full width for both sections */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .alert-box {
+    flex-direction: column; /* Stack alert items vertically on small screens */
+    text-align: center; /* Center text */
+  }
+
+  .alert-box span {
+    text-align: left; /* Align the text to the left */
+  }
+
+  .show-more-btn {
+    width: 100%; /* Full-width button */
+  }
+
+  .submit-btn {
+    padding: 12px 0; /* Adjust padding */
+    font-size: 16px; /* Larger font size for better readability */
+  }
+
+  .Mic {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  /* Adjust form inputs for mobile */
+  input[type="text"], input[type="file"] {
+    width: 100%; /* Full width on mobile */
+    margin-bottom: 15px;
+  }
+
+  label {
+    font-size: 14px;
+  }
+
+  .Label4 h3 {
+    font-size: 18apx; /* Adjust heading size */
+  }
+}
