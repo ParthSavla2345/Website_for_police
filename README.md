@@ -4,8 +4,7 @@ Overview
 
 The Police Case Management System is a web-based platform that allows police officers to manage and track criminal cases efficiently. The system enables officers to file, update, and categorize cases, ensuring transparency and streamlined investigations.
 
-Features
-
+Features 
 🔹 User Roles & Authentication
 
 Victims (Users): File complaints and view case progress.
