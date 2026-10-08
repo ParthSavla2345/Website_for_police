@@ -85,7 +85,7 @@ Open MongoDB Compass and create a database named police_cases_db.
 
 Insert case data manually or run the backend API.
 
-4️⃣ Start the Backend Server
+4️⃣ Start the Backend 
 
 node server.js
 
